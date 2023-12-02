@@ -2,15 +2,9 @@ console.log("sign in nè");
 
 const users = JSON.parse(localStorage.getItem("users")) || [];
 
-// lắng nghe sự kiện người dùng submit form
 document.getElementById("sign-in-form").addEventListener("submit", (e) => {
-  // test lắng nghe sự kiện thành công
-  console.log("submit login ne");
-
-  // chặn sự kiện load trang
   e.preventDefault();
 
-  // lấy thông tin của người dùng nhập vào form: email/password
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 

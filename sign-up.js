@@ -1,5 +1,3 @@
-console.log("sign-up nè");
-
 var users = JSON.parse(localStorage.getItem("users")) || [];
 
 document.getElementById("sign-up-form").addEventListener("submit", (e) => {
